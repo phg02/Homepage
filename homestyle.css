@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Neue-Montreal-Reg;
+    src: url(fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+    font-family: Neue-Montreal-Med;
+    src: url(fonts/NeueMontreal-Medium.otf
+}
+
+@font-face {
+    font-family: Neue-Montreal-Bold;
+    src: url(fonts/NeueMontreal-Bold.otf);
+}
+
+.first{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.first .thehead{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.first .thehead .logo{
+    font-size: 3rem;
+    
+}
+.first .thehead .logo a{
+    color: white;
+}
+
+.first .thehead .navbar .listofbutton{
+    list-style: none;
+}
+
+.first .thehead .navbar .listofbutton li{
+    display: inline-block;
+    width:max-content;
+    padding: 20px;
+}
+
+.first .thehead .navbar .listofbutton a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Neue-Montreal-Med', 'sans-serif';
+}
+
+.first .thehead .navbar .listofbutton a:hover{
+    color:#9A9A9A;
+}
