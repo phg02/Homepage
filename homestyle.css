@@ -89,6 +89,7 @@ main .content{
 }
 main .content h1{
     font-family: 'Neue-Montreal-Bold', 'sans-serif';
+    font-size: 3.5rem;
 }
 main .content p{   
     font-family: 'Neue-Montreal-Med', 'sans-serif';
