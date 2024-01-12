@@ -84,7 +84,7 @@ main .content{
     color: white;
     font-size: 2rem;
     top: 50%;
-    transform: translateY(50%);
+    transform: translateY(30%);
     text-align: center;
 }
 main .content h1{
@@ -113,4 +113,10 @@ button:hover{
     background-color: black;
     color: white;
     transition: ease-in 0.1s;
+}
+.year{
+    color:#8afed8;
+}
+.content h1{
+    padding: 15px;
 }
