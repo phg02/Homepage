@@ -140,7 +140,8 @@ button:hover{
 .box{
     padding: 30px;
     border-radius: 10px;
-    background-color: rgba(23,44,29, 0.474);
+    background: rgb(0,212,255);
+    background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 60%, rgba(9,121,99,1) 100%);
     color:white;
     border: 2px solid rgb(1,76,1);
 }
