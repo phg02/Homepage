@@ -187,3 +187,27 @@ button:hover{
 .info .yearcolor{
     color:#6BF899;
 }
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    padding-bottom: 40px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #101010;
+}
+footer li{
+    list-style: none;
+    padding: 2px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer i{
+    font-size: 2rem;
+}
+footer h3{
+    font-size: 1.5rem;
+    font-family: 'Neue-Montreal-Med', 'sans-serif';
+}
