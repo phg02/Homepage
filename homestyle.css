@@ -135,7 +135,7 @@ button:hover{
     grid-template-rows: repeat(3, 1fr);
     column-gap: 20px;
     row-gap:20px;
-    transform: translateY(15%);
+    transform: translateY(10%);
 }
 .box{
     padding: 30px;
@@ -199,6 +199,7 @@ footer{
 footer li{
     list-style: none;
     padding: 2px;
+    line-height: 1.4;
 }
 footer a{
     text-decoration: none;
