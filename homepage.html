@@ -103,34 +103,52 @@
                 <a href=""><button>World View</button></a>
         </div>
     </section>
+    <hr>
+    <footer>
+        <div class="gbdb">
+            <h3>Global Database</h3>
+            <ul>
+                <li><a href="">Find world data</a></li>
+                <li><a href="">Find country data</a></li>
+                <li><a href="">Find state/city data</a></li>
+            </ul>
+        </div>
+        <div class="at">
+            <h3>Analytic tools</h3>
+            <ul>
+                <li><a href="">Compare region</a></li>
+                <li><a href="">Find countries with similar data</a></li>
+                <li><a href="">Find countries with selected data</a></li>
+            </ul>
+        </div>
+        <div class="ab">
+            <a href=""><h3>About us</h3></a>
+        </div>
+        <div class="at">
+            <h3>Contact us</h3>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a> <a href=""><i class="fa-brands fa-instagram"></i></a> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li>+84 123 456 77</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script> 
+
+    <script>
+    const lenis = new Lenis();
+    
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
+    
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    
+    requestAnimationFrame(raf);
+    </script>
 </body>
-<hr>
-<footer>
-    <div class="gbdb">
-        <h3>Global Database</h3>
-        <ul>
-            <li><a href="">Find world data</a></li>
-            <li><a href="">Find country data</a></li>
-            <li><a href="">Find state/city data</a></li>
-        </ul>
-    </div>
-    <div class="at">
-        <h3>Analytic tools</h3>
-        <ul>
-            <li><a href="">Compare region</a></li>
-            <li><a href="">Find countries with similar data</a></li>
-            <li><a href="">Find countries with selected data</a></li>
-        </ul>
-    </div>
-    <div class="ab">
-        <a href=""><h3>About us</h3></a>
-    </div>
-    <div class="at">
-        <h3>Contact us</h3>
-        <ul>
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a> <a href=""><i class="fa-brands fa-instagram"></i></a> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
-            <li>+84 123 456 77</li>
-        </ul>
-    </div>
-</footer>
+
+
 </html>
