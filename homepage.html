@@ -51,7 +51,35 @@
             <div class="box box__1">
                 <h1>Population Data</h1>
                 <p>53 years of population data available from 1960 - 2013</p>
-                <p>Population  data available at worldwide & country level.</p>
+                <p>Population  data available at worldwide & country level.</p><br>
+                <div>
+                    <canvas id="myChart" height="200"></canvas>
+                </div>
+                  
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+                <script>
+                    const ctx = document.getElementById('myChart');
+                  
+                    new Chart(ctx, {
+                      type: 'line',
+                      data: {
+                        labels: ['1960', '1970', '1980', '1990', '2000', '2010'],
+                        datasets: [{
+                          label: 'Population',
+                          data: [12000000, 19000000, 300000, 70000000, 2000000, 30000],
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
             </div>
             <div class="box box__2">
                 <div class="from">
@@ -80,7 +108,35 @@
             <div class="box box__1">
                 <h1>Temperature Data</h1>
                 <p>265 years of temperature data available from 1750 - 2013</p>
-                <p>Temperature  data available at worldwide, country, state and city.</p>
+                <p>Temperature  data available at worldwide, country, state and city.</p><br>
+                <div>
+                    <canvas id="myChart2" height="200"></canvas>
+                </div>
+                  
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+                <script>
+                    const cts = document.getElementById('myChart2');
+                  
+                    new Chart(cts, {
+                      type: 'line',
+                      data: {
+                        labels: ['1960', '1970', '1980', '1990', '2000', '2010'],
+                        datasets: [{
+                          label: 'Temperature',
+                          data: [9.0, 10.0, 12.0, 12.4, 12.3, 14.5],
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
             </div>
             <div class="box box__2">
                 <div class="from">
