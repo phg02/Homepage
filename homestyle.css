@@ -91,13 +91,19 @@
     height: 200px;
     transition: ease-in 0.8s;
 }
-
+.hero{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
 main .content {
     color: white;
     font-size: 2rem;
     top: 50%;
-    transform: translateY(30%);
     text-align: center;
+    transform: translateY(10%);
 }
 
 main .content h1 {
@@ -144,6 +150,12 @@ button:hover {
     background-color: #101010;
 
 }
+.wrapper {
+    display: flex;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
 
 .second .container {
     display: grid;
@@ -153,9 +165,7 @@ button:hover {
     grid-template-rows: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 20px;
-    align-content: center;
-    justify-content: center;
-    padding: 4%;
+
     
 }
 
