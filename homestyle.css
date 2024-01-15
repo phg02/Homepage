@@ -83,10 +83,6 @@
     display: block;
 }
 
-.submenu ul li a {
-    padding-bottom: 5px;
-}
-
 #tool:hover .submenu {
     display: block;
     position: absolute;
