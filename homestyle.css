@@ -29,43 +29,59 @@
     background-attachment: fixed;
 }
 
-.first .thehead {
-    padding: 2rem;
+.header {
+    width: 100vw;
+    height: auto;
+}
+
+.thehead {
+    position: absolute;
+    width: 100%;
+}
+
+.thehead-wrap {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    margin-left: 2%;
-    margin-right: 2%;
-    transition: ease-in 0.8s;
+    align-items: center;
+
+
 }
 
-.first .thehead .logo {
+
+.thehead .logo {
     font-size: 3rem;
-
+    margin: 1rem 2rem
 }
 
-.first .thehead .logo a {
+.thehead .logo a {
     color: #9A9A9A;
 }
 
-.first .thehead .navbar .listofbutton {
+.thehead .navbar {
+    margin: 0 2rem;
+}
+
+.thehead .navbar .listofbutton {
     list-style: none;
 }
 
-.first .thehead .navbar .listofbutton li {
+.thehead .navbar .listofbutton li {
     display: inline-block;
     width: max-content;
     padding: 20px;
     position: relative;
 }
 
-.first .thehead .navbar .listofbutton a {
+.thehead .navbar .listofbutton a {
     text-decoration: none;
     color: #9A9A9A;
     font-size: 1.2rem;
     font-family: 'Neue-Montreal-Med', 'sans-serif';
 }
 
-.first .thehead .navbar .listofbutton a:hover {
+.thehead .navbar .listofbutton a:hover {
     color: white;
     border-bottom: 3px solid white;
     transition: ease-in-out 0.2s;
@@ -91,19 +107,21 @@
     height: 200px;
     transition: ease-in 0.8s;
 }
-.hero{
+
+.hero {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
 }
+
 main .content {
     color: white;
     font-size: 2rem;
     top: 50%;
     text-align: center;
-    transform: translateY(10%);
+
 }
 
 main .content h1 {
@@ -150,6 +168,7 @@ button:hover {
     background-color: #101010;
 
 }
+
 .wrapper {
     display: flex;
     height: 100%;
@@ -166,14 +185,14 @@ button:hover {
     column-gap: 20px;
     row-gap: 20px;
 
-    
+
 }
 
 .box {
     padding: 30px;
     border-radius: 10px;
-    background: rgb(130,130,130);
-    background: linear-gradient(140deg, rgba(130,130,130,0.364670868347339) 0%, rgba(0,0,0,0.4823179271708683) 29%, rgba(0,0,0,0.46271008403361347) 56%, rgba(9,121,99,0.4375) 100%);
+    background: rgb(130, 130, 130);
+    background: linear-gradient(140deg, rgba(130, 130, 130, 0.364670868347339) 0%, rgba(0, 0, 0, 0.4823179271708683) 29%, rgba(0, 0, 0, 0.46271008403361347) 56%, rgba(9, 121, 99, 0.4375) 100%);
     color: white;
     border: 2px solid rgb(1, 76, 1);
 }
