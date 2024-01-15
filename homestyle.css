@@ -97,6 +97,7 @@
 .submenu ul li {
     list-style: none;
     display: block;
+    height: 15px;
 }
 
 #tool:hover .submenu {
