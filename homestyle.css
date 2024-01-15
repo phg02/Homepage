@@ -150,8 +150,8 @@ button {
 }
 
 button:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     transition: ease-in 0.1s;
 }
 
