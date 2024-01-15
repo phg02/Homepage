@@ -153,14 +153,19 @@ button:hover {
     grid-template-rows: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 20px;
-    transform: translateY(10%);
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    height:fit-content;
+    padding:4%;
+    
 }
 
 .box {
     padding: 30px;
     border-radius: 10px;
-    background: rgb(0, 212, 255);
-    background: linear-gradient(45deg, rgba(0, 212, 255, 1) 0%, rgba(0, 0, 0, 1) 28%, rgba(0, 0, 0, 1) 60%, rgba(9, 121, 99, 1) 100%);
+    background: rgb(130,130,130);
+    background: linear-gradient(140deg, rgba(130,130,130,0.364670868347339) 0%, rgba(0,0,0,0.4823179271708683) 29%, rgba(0,0,0,0.46271008403361347) 56%, rgba(9,121,99,0.4375) 100%);
     color: white;
     border: 2px solid rgb(1, 76, 1);
 }
