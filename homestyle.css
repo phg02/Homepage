@@ -156,7 +156,7 @@ button:hover {
     height: 100vh;
     align-content: center;
     justify-content: center;
-    height:fit-content;
+    height:max-content;
     padding:4%;
     
 }
