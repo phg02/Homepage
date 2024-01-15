@@ -153,11 +153,9 @@ button:hover {
     grid-template-rows: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 20px;
-    height: 100vh;
     align-content: center;
     justify-content: center;
-    height:max-content;
-    padding:4%;
+    padding: 4%;
     
 }
 
