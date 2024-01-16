@@ -43,27 +43,31 @@
                 </div>
                 <form class="custommenu">
                     <div class="type">
-                        <select> 
+                        <select>
+                            <option disabled selected>Temperature</option> 
                             <option value="temp">Temperature</option>
                             <option value="pop">Population</option>
                         </select>
                     </div>
                     <div class="startyear">
-                        <select> 
+                        <select>
+                            <option disabled selected>Start year</option> 
                             <option value="">1999</option>
                             <option value="">1998</option>
                         </select>
                     </div>
                     <div class="endyear">
-                        <select> 
+                        <select>
+                            <option disabled selected>End year</option>
                             <option value="">1999</option>
                             <option value="">1998</option>
                         </select>
                     </div>
                     <div class="thesub">
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="submit" class="subform"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div> 
                 </form>
+                <br>
                 <div class="graph">
                     <canvas id="myChart2" height="400" width="300"></canvas>
                 </div>
@@ -95,10 +99,10 @@
                 </script>
             </div>
             <div class="box box__2">
-                <h1>Other option</h1>
+                <h1>Other options</h1>
                 <br>
-                <a href=""><button>Country View</button></a>
-                <a href=""><button>State/City View</button></a>
+                <a href=""><button class="option">Country View</button></a>
+                <a href=""><button class="option">State/City View</button></a>
             </div>
             <div class="box box__3">
                 <h1>Ranking</h1>
