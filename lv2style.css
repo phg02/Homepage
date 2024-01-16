@@ -172,6 +172,7 @@ select{
     justify-content: end;
     gap:20px;
 }
+
 .box__2{
     grid-column: 3/4;
     grid-row: 1/2;
