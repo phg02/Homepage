@@ -190,6 +190,7 @@ select{
     height: 70%;
     border-radius: 5%;
     line-height: 1.5;
+    overflow-y: auto;
 }
 .sortby{
     margin-bottom: 10px;
