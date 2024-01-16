@@ -144,7 +144,8 @@ section {
     width: 80%;
     height: 90%;
     align-content: center;
-    margin: 10vh auto;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
 }
 
 .box {
@@ -225,6 +226,9 @@ select {
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
     align-items: center;
+}
+.population{
+    justify-self: end;
 }
 
 .year {
