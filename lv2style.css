@@ -160,7 +160,11 @@ button:hover {
     grid-row: 1/4;
 }
 select{
-    display: inline-block;
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
 }
 .custommenu{
     display: flex;
