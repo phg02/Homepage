@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="country.css">
+    <script src="https://kit.fontawesome.com/d535fdea96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="thehead">
+        <div class="thehead-wrap">
+        <div class="logo">
+            <a href="homepage.html"><i class="fa-solid fa-earth-americas"></i></a>
+        </div>
+        <div class="navbar">
+            <ul class="listofbutton">
+                <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
+                <li id="tool"></i><a href=""><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Tool 1</a></li>
+                            <li><a href="">Tool 2</a></li>
+                            <li><a href="https://www.youtube.com/">Tool 3</a></li>
+                        </div>
+                
+                </li>
+                
+                <li><a href="">World View</a></li>
+                <li><a href="">Country View</a></li>
+                <li><a href="">About us</a></li>
+            </ul>
+        </div>
+    </div>
+    </header>
+    <main>
+
+    <section id="first">
+    <div class="wrapper">
+        <div class="container">
+            <div class="box box__1">
+                <div class="boxinfo">
+                    <h1>Country View</h1>
+                    <p>Temperature graph</p>
+                </div>
+                <form class="custommenu">
+                    <div class="country">
+                        <select>
+                            <option disabled selected>Country</option> 
+                            <option value="">Vietnam</option>
+                            <option value="">wqewqrd</option>
+                        </select>
+                    </div>
+                    <div class="type">
+                        <select>
+                            <option disabled selected>Type</option> 
+                            <option value="temp">Temperature</option>
+                            <option value="pop">Population</option>
+                        </select>
+                    </div>
+                    <div class="startyear">
+                        <select>
+                            <option disabled selected>Start year</option> 
+                            <option value="">1999</option>
+                            <option value="">1998</option>
+                        </select>
+                    </div>
+                    <div class="endyear">
+                        <select>
+                            <option disabled selected>End year</option>
+                            <option value="">1999</option>
+                            <option value="">1998</option>
+                        </select>
+                    </div>
+                    <div class="thesub">
+                        <button type="submit" class="subform"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div> 
+                </form>
+                <br>
+                <div class="graph">
+                    <canvas id="myChart2" height="400" width="300"></canvas>
+                </div>
+                
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                
+                <script>
+                    const cts = document.getElementById('myChart2');
+                
+                    new Chart(cts, {
+                    type: 'line',
+                    data: {
+                        labels: ['1960', '1970', '1980', '1990', '2000', '2010'],
+                        datasets: [{
+                        label: 'Temperature',
+                        data: [9.0, 10.0, 12.0, 12.4, 12.3, 14.5],
+                        borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                        y: {
+                            beginAtZero: true
+                        },
+                        },
+                        maintainAspectRatio: false,
+                    }
+                    });
+                </script>
+            </div>
+            <div class="box box__2">
+                <h1>Other options</h1>
+                <br>
+                <a href=""><button class="option">World View</button></a>
+                <a href=""><button class="option">State/City View</button></a>
+            </div>
+            <div class="box box__3">
+                <h1>Ranking</h1>
+                <form>
+                <div class="selectContainer">
+                    <select class="sortby">
+                        <option value="">Ascending</option>
+                        <option value="">Descending</option>
+                    </select>
+                    <select class="TypeMeasure">
+                        <option value="">Average</option>
+                        <option value="">Min</option>
+                        <option value="">Min</option>
+                    </select>
+                    <select class="TypeClass">
+                        <option value="">City</option>
+                        <option value="">State</option>
+                    </select>
+                </div>
+                <form>
+                <div class="ranking">
+                    <ol>
+                        <li>Country 1</li>
+                        <li>Country 2</li>
+                        <li>Country 3</li>
+                        <li>Country 4</li>
+                        <li>Country 5</li>
+                        <li>Country 6</li>
+                        <li>Country 7</li>
+                        <li>Country 8</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="box box__5">
+                <div class="year">
+                    <h1>1960</h1>
+                </div>
+                <div class="population">
+                    <h1>3,019,233,434</h1>
+                </div>
+                <div class="popunit">
+                    <h5>people</h5>
+                </div>
+                <div class="tempunit">
+                    <h5>Average temperature</h5>
+                </div>
+                <div class="temp">
+                    <h1>8.584°C</h1>   
+                </div>
+                <div class="tempunit">
+                    <h5>Minimum temperature</h5>
+                </div>
+                <div class="temp">
+                    <h1>8.584°C</h1>   
+                </div>
+                <div class="tempunit">
+                    <h5>Maximum temperature</h5>
+                </div>
+                <div class="temp">
+                    <h1>8.584°C</h1>   
+                </div>
+            </div>
+            <div class="box box__6">
+                <div class="year">
+                    <h1>2013</h1>
+                </div>
+                <div class="population">
+                    <h1>7,250,593,370</h1>
+                </div>
+                <div class="popunit">
+                    <h5>people</h5>
+                </div>
+                <div class="tempunit">
+                    <h5>Average temperature</h5>
+                </div>
+                <div class="temp">
+                    <h1>9.607°C</h1>   
+                </div>
+                <div class="tempunit">
+                    <h5>Minimum temperature</h5>
+                </div>
+                <div class="temp">
+                    <h1>8.584°C</h1>   
+                </div>
+                <div class="tempunit">
+                    <h5>Maximum temperature</h5>
+                </div>
+                <div class="temp">
+                    <h1>8.584°C</h1>
+                </div>
+            </div>
+            <div class="box box__7">
+                <h3>Population change:</h3>
+                <h1>+140%</h1>
+                <br>
+                <h3>Temperature change:</h3>
+                <h1>+11.92%</h1>
+                <br>
+                <h3>Min temperature change</h3>
+                <h1>+140%</h1>
+                <br>
+                <h3>Max temperature change</h3>
+                <h1>+11.92%</h1>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    </main>
+    <hr>
+    <footer>
+        <div class="gbdb">
+            <h3>Global Database</h3>
+            <ul>
+                <li><a href="">Find world data</a></li>
+                <li><a href="">Find country data</a></li>
+                <li><a href="">Find state/city data</a></li>
+            </ul>
+        </div>
+        <div class="at">
+            <h3>Analytic tools</h3>
+            <ul>
+                <li><a href="">Compare region</a></li>
+                <li><a href="">Find countries with similar data</a></li>
+                <li><a href="">Find countries with selected data</a></li>
+            </ul>
+        </div>
+        <div class="ab">
+            <a href=""><h3>About us</h3></a>
+        </div>
+        <div class="at">
+            <h3>Contact us</h3>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a> <a href=""><i class="fa-brands fa-instagram"></i></a> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li>+84 123 456 77</li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
