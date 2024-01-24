@@ -212,6 +212,17 @@ select {
 .sortby {
     margin-bottom: 10px;
 }
+.sortbutt{
+    font-size: 1.4rem;
+    color: white;
+    border: 2px solid white;
+    transform: translateY(2.5px);
+    width: 30px;
+    border-radius: 40%;
+    background: none;
+    margin-left: 10px;
+}
+
 
 .ranking ol {
     list-style-position: inside;
