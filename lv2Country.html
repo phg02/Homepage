@@ -77,35 +77,24 @@
                     </div> 
                 </form>
                 <br>
-                <div class="graph">
-                    <canvas id="myChart2" height="400" width="300"></canvas>
+                <div class="table">
+                    <table class="infosforyear">
+                        <tr>
+                            <th>Year</th>
+                            <th>Population</th>
+                            <th>Average temperature</th>
+                            <th>Minimum temperature</th>
+                            <th>Maximum temperature</th>
+                        </tr>
+                        <tr>
+                            <td>1960</td>
+                            <td>3,019,233,434</td>
+                            <td>8.584°C</td>
+                            <td>8.584°C</td>
+                            <td>8.584°C</td>
+                        </tr>
+                    </table>
                 </div>
-                
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                
-                <script>
-                    const cts = document.getElementById('myChart2');
-                
-                    new Chart(cts, {
-                    type: 'line',
-                    data: {
-                        labels: ['1960', '1970', '1980', '1990', '2000', '2010'],
-                        datasets: [{
-                        label: 'Temperature',
-                        data: [9.0, 10.0, 12.0, 12.4, 12.3, 14.5],
-                        borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        scales: {
-                        y: {
-                            beginAtZero: true
-                        },
-                        },
-                        maintainAspectRatio: false,
-                    }
-                    });
-                </script>
             </div>
             <div class="box box__2">
                 <h1>Other options</h1>
